@@ -1,0 +1,1190 @@
+[
+  {
+    "objectID": "problem-sets/psfinal/Final_PS_PH784_2025.html",
+    "href": "problem-sets/psfinal/Final_PS_PH784_2025.html",
+    "title": "PH784: Final Exam",
+    "section": "",
+    "text": "← Back to Course Home\n\n\nIntroduction\nRead the following article from JAMA Pediatrics as if you were a peer-reviewer of this paper. Note that I chose this paper for this assignment not because it is low quality with many weaknesses—in fact, this is a well-written and high-quality study. However, no study is perfect. The gaps you identify can present good opportunities for future research. This is how each individual (imperfect) study contributes to science.\n\nAris IM, Perng W, Dabelea D, Padula AM, Alshawabkeh A, Vélez-Vega CM, Aschner JL, Camargo CA, Sussman TJ, Dunlop AL, Elliott AJ. Neighborhood opportunity and vulnerability and incident asthma among children. JAMA pediatrics. 2023 Oct 1;177(10):1055-64.\n\nBriefly, this study examined the relationships between two widely used measures of neighborhood socioeconomic environment and asthma incidence among children at three different life stages (birth, infancy, and early childhood). The neighborhood measures included the Social Vulnerability Index (SVI) and Child Opportunity Index (COI) at the census tract level. Their main findings are shown in Figure 3 (i.e., adjusted incidence rate ratios, IRRs). In this exam, you will focus on results concerning COI.\nBased on what you have learned in the course, critically evaluate the article by answering the questions below. Work alone and do not discuss this exam with classmates.\n\n\n\n\n\n\nTip\n\n\n\n\nAvoid providing unrelated responses and focus on answering the questions you are asked\nEach question asks you to discuss multiple points, so make sure you address all of them\n\n\n\n\n\n\nQ1\nDescribe how the authors operationalized the outcome (“asthma incidence”) and discuss the validity of what they assessed as a measure of asthma incidence. If there is a validity concern, explain how the lack of validity may influence their main findings—does it underestimate or overestimate the true effect? Justify your response.\n\n\n\n\n\n\nYour answer\n\n\n\n\n\nQ2\nBriefly describe how the COI scores were calculated. Then, explain how they defined and operationalized the “neighborhood” environment exposure based on the COI scores. Discuss the pros and cons of their approach and suggest at least one alternative approach to operationalize neighborhood exposure, including its pros and cons.\n\n\n\n\n\n\nYour answer\n\n\n\n\n\nQ3\nProvide the causal interpretation of the adjusted association with asthma incidence for the “very high” COI in early childhood (upper right panel of Figure 3): IRR = 0.80 (95% CI: 0.68-0.94).\n\n\n\n\n\n\nYour answer\n\n\n\n\n\nQ4\nDescribe the specific exchangeability assumption for causal identification required in this study. Use specific constructs rather than providing a generic description of the assumption. Then, discuss whether you think the assumption is reasonable. Do not just say there may be unmeasured confounders due to the observational nature of the study. First, consider what covariates they controlled for and WHEN they were measured, and discuss whether the control was appropriate. Second, list one potential unmeasured confounder and qualitatively discuss the bias the confounder may induce.\n\n\n\n\n\n\nYour answer\n\n\n\n\n\nQ5\nDescribe the specific consistency assumption for causal identification required in this study. Use specific constructs rather than providing a generic description of the assumption. Then, describe the hypothetical intervention they are conceptualizing and discuss whether you think the consistency assumption is reasonable. Justify your answer.\n\n\n\n\n\n\nYour answer\n\n\n\n\n\nQ6\nSuppose the causal identification assumptions are reasonably met. Instead of the causal estimand the authors used in this paper (i.e., your response to Q3), 1) suggest an alternative causal estimand based on a stochastic intervention for the COI and 2) explain the potential advantages of the new estimand.\n\n\n\n\n\n\nYour answer\n\n\n\n\n\nQ7\nAlthough the authors reported they found no multiplicative effect heterogeneity by sex, race and ethnicity, and rurality, they did not provide the numeric results (which they should have). In general, regression analysis with a product term (e.g., \\(race \\times COI\\)) is statistically underpowered. Suppose they repeated the same study with a much larger sample size and found effect heterogeneity by race and ethnicity where COI is associated with even lower rates of asthma incidence among white group compared to non-white groups. Discuss 1) what might explain this observed effect heterogeneity and 2) the policy implications of the finding (i.e., what insights do you gain from such a finding and how would you use them?).\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Final Exam"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps5/PS5_PH784_2025.html",
+    "href": "problem-sets/ps5/PS5_PH784_2025.html",
+    "title": "PH784: Problem Set #5",
+    "section": "",
+    "text": "← Back to Course Home\n\nRead the following article and answer the questions.\n\nLi S, Stampfer MJ, Williams DR, VanderWeele TJ. Association of religious service attendance with mortality among women. JAMA internal medicine. 2016 Jun 1;176(6):777-85.\n\nhttps://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2521827\n\n\nBriefly, this study estimated various “effects” of religious service attendance on mortality. They used data from the Nurses’ Health Study, a large prospective cohort study among US women. They examined both all-cause mortality and cause-specific mortality as outcomes, but we will focus on their findings for all-cause mortality.\nThey estimated the effects of religious service attendance in 1996 (\\(A_{1996}\\)) and 2000 (\\(A_{2000}\\)) on all-cause mortality between 2000-2012 (\\(Y_{2000-2012}\\)). They controlled for various covariates, including sociodemographic characteristics and health conditions in 1992 (\\(L_{1992}\\)) and 1996 (\\(L_{1996}\\)), as well as pre-baseline religious service attendance in 1992 (\\(A_{1992}\\)), using a method called a “marginal structural model.” Suppose their analysis is based on the DAG below.\n\nTable 2 of the paper shows results of this analysis. For example, the estimate for “At least once per week” in 1996 and “More than once a week” in 2000 was HR = 0.50 (95% CI: 0.46-0.54). This corresponds to the following causal estimand.\n\\(HR=h(t)^{a_{1996}=1,a_{2000}=1} / h(t)^{a_{1996}=0,a_{2000}=0}\\)\nwhere \\(t\\) is time to the onset of \\(Y_{2000-2012}\\).\n\n\nQ1. Explain in words what hypothetical interventions this causal estimand is simulating.\n\n\n\n\n\n\nYour answer\n\n\n\n\n\nQ2. Discuss whether any components of \\(L_{1996}\\) could be affected by \\(A_{1996}\\). Justify your answer.\n\n\n\n\n\n\nYour answer\n\n\n\n\n\nQ3. Can we fit a conventional outcome regression to estimate this effect? Why or why not?\n\n\n\n\n\n\nYour answer\n\n\n\n\nA critique suggested using the conventional Cox regression for the association between the baseline exposure \\(A_{1996}\\) and time to all-cause mortality through 2012 (\\(Y_{1996-2012}\\)), adjusting for pre-baseline covariates (\\(L_{1992}\\) and \\(A_{1992}\\)). Suppose the DAG above is correctly capturing the underlying causal structure.\n\n\nQ4. Notice that religious service attendance is a time-varying exposure. Is the recommended baseline exposure analysis valid? Why? Why not?\n\n\n\n\n\n\nYour answer\n\n\n\n\n\nQ5. When do you expect this effect and the result in Table 2 above (i.e., HR = 0.50) to diverge?\n\n\n\n\n\n\nYour answer\n\n\n\n\n\n\nQ6 (Optional) How did the authors motivate the use of time-varying exposure analysis via a marginal structural model? Do you find it convincing? Why? Why not?\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 5"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps3/PS3_PH784_2025.html",
+    "href": "problem-sets/ps3/PS3_PH784_2025.html",
+    "title": "PH784: Problem Set #3",
+    "section": "",
+    "text": "← Back to Course Home",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 3"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps3/PS3_PH784_2025.html#q1.-what-is-the-exchangeability-assumption-we-need-to-causally-interpret-the-estimate-for-union-0.087",
+    "href": "problem-sets/ps3/PS3_PH784_2025.html#q1.-what-is-the-exchangeability-assumption-we-need-to-causally-interpret-the-estimate-for-union-0.087",
+    "title": "PH784: Problem Set #3",
+    "section": "Q1. What is the exchangeability assumption we need to causally interpret the estimate for union (0.087)?",
+    "text": "Q1. What is the exchangeability assumption we need to causally interpret the estimate for union (0.087)?\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 3"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps3/PS3_PH784_2025.html#q2.-when-the-exchangeability-assumption-you-stated-in-response-to-q1-holds-can-you-interpret-the-estimate-for-marital-status-ms-why-why-not",
+    "href": "problem-sets/ps3/PS3_PH784_2025.html#q2.-when-the-exchangeability-assumption-you-stated-in-response-to-q1-holds-can-you-interpret-the-estimate-for-marital-status-ms-why-why-not",
+    "title": "PH784: Problem Set #3",
+    "section": "Q2. When the exchangeability assumption you stated in response to Q1 holds, can you interpret the estimate for marital status ms? Why? Why not?",
+    "text": "Q2. When the exchangeability assumption you stated in response to Q1 holds, can you interpret the estimate for marital status ms? Why? Why not?\n\n\n\n\n\n\nYour answer\n\n\n\n\nNow consider a different approach to model this data. The following code uses the lm() to fit a different model for the relationship union and lwage. Notice that the following table only shows the first estimates of the regression output by using the slice(1:4).\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                term\n                estimate\n                conf.low\n                conf.high\n                p.value\n              \n        \n        \n        \n                \n                  (Intercept)\n                  6\n                  5.8\n                  6.2\n                  0\n                \n                \n                  union\n                  0.054\n                  0.0048\n                  0.1\n                  0.032\n                \n                \n                  wks\n                  0.00096\n                  -0.001\n                  0.003\n                  0.35\n                \n                \n                  ms\n                  -0.084\n                  -0.15\n                  -0.021\n                  0.0094",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 3"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps3/PS3_PH784_2025.html#q3.-explain-how-this-model-differs-from-the-first-one-in-terms-of-adjusted-covariates.",
+    "href": "problem-sets/ps3/PS3_PH784_2025.html#q3.-explain-how-this-model-differs-from-the-first-one-in-terms-of-adjusted-covariates.",
+    "title": "PH784: Problem Set #3",
+    "section": "Q3. Explain how this model differs from the first one in terms of adjusted covariates.",
+    "text": "Q3. Explain how this model differs from the first one in terms of adjusted covariates.\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 3"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps3/PS3_PH784_2025.html#q4.-what-is-the-exchangeability-assumption-we-need-to-causally-interpret-the-estimate-for-union-0.054",
+    "href": "problem-sets/ps3/PS3_PH784_2025.html#q4.-what-is-the-exchangeability-assumption-we-need-to-causally-interpret-the-estimate-for-union-0.054",
+    "title": "PH784: Problem Set #3",
+    "section": "Q4. What is the exchangeability assumption we need to causally interpret the estimate for union (0.054)?",
+    "text": "Q4. What is the exchangeability assumption we need to causally interpret the estimate for union (0.054)?\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 3"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps3/PS3_PH784_2025.html#q5.-in-this-longitudinal-study-do-you-think-the-authors-successfully-addressed-the-problem-justify-your-answer.",
+    "href": "problem-sets/ps3/PS3_PH784_2025.html#q5.-in-this-longitudinal-study-do-you-think-the-authors-successfully-addressed-the-problem-justify-your-answer.",
+    "title": "PH784: Problem Set #3",
+    "section": "Q5. In this longitudinal study, do you think the authors successfully addressed the problem? Justify your answer.",
+    "text": "Q5. In this longitudinal study, do you think the authors successfully addressed the problem? Justify your answer.\n\n\n\n\n\n\nYour answer\n\n\n\n\nA reviewer pointed out that these estimates could be biased due to an unmeasured confounder of alcohol consumption.",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 3"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps3/PS3_PH784_2025.html#q6.-discuss-the-potential-magnitude-of-this-bias-considering-the-specific-regression-model-they-used.-no-need-to-provide-quantitative-bias-assessment.",
+    "href": "problem-sets/ps3/PS3_PH784_2025.html#q6.-discuss-the-potential-magnitude-of-this-bias-considering-the-specific-regression-model-they-used.-no-need-to-provide-quantitative-bias-assessment.",
+    "title": "PH784: Problem Set #3",
+    "section": "Q6. Discuss the potential magnitude of this bias, considering the specific regression model they used. No need to provide quantitative bias assessment.",
+    "text": "Q6. Discuss the potential magnitude of this bias, considering the specific regression model they used. No need to provide quantitative bias assessment.\n\n\n\n\n\n\nYour answer\n\n\n\n\nThis study assumed the exchangeability for levels of loneliness conditional on social isolation, age, marital status, ethnicity, education status, smoking status, and wealth.",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 3"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps3/PS3_PH784_2025.html#q7.-propose-one-negative-control-outcome-to-falsify-this-conditional-exchangeability-assumption-for-the-loneliness-exposure.-explain-why-you-think-it-is-a-good-negative-control-outcome.-suppose-you-have-infinite-resources-to-collect-any-data.-be-creative",
+    "href": "problem-sets/ps3/PS3_PH784_2025.html#q7.-propose-one-negative-control-outcome-to-falsify-this-conditional-exchangeability-assumption-for-the-loneliness-exposure.-explain-why-you-think-it-is-a-good-negative-control-outcome.-suppose-you-have-infinite-resources-to-collect-any-data.-be-creative",
+    "title": "PH784: Problem Set #3",
+    "section": "Q7. Propose one negative control outcome to falsify this conditional exchangeability assumption for the loneliness exposure. Explain why you think it is a good negative control outcome. Suppose you have infinite resources to collect any data. Be creative!",
+    "text": "Q7. Propose one negative control outcome to falsify this conditional exchangeability assumption for the loneliness exposure. Explain why you think it is a good negative control outcome. Suppose you have infinite resources to collect any data. Be creative!\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 3"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps1/PS1_PH784_2025.html",
+    "href": "problem-sets/ps1/PS1_PH784_2025.html",
+    "title": "PH784: Problem Set #1 (due Sept 15, 2025)",
+    "section": "",
+    "text": "← Back to Course Home",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 1"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps1/PS1_PH784_2025.html#intro",
+    "href": "problem-sets/ps1/PS1_PH784_2025.html#intro",
+    "title": "PH784: Problem Set #1 (due Sept 15, 2025)",
+    "section": "Intro",
+    "text": "Intro\nWe will analyze the 2009-2012 NHANES data via the R package NHANES. This document provides a comprehensive info about the package. This package provides two datasets: NHANES and NHANESraw. In the documentation, the following is stated:\n\nNHANES and NHANESraw each include 75 variables available for the 2009-2010 and 2011-2012 sample years. NHANESraw has 20,293 observations of these variables plus four additional variables that describe that sample weighting scheme employed. NHANES contains 10,000 rows of data resampled from NHANESraw to undo these oversampling effects. NHANES can be treated, for educational purposes, as if it were a simple random sample from the American population.\n\nWe will use the dataset NHANES (n=10,000) and ignore sampling weights.\n\nOutcome\n\nContinuous: BMI, BPSysAve\nBinary: Diabetes, SmokeNow\n\nSocial group\n\nRace: Race1\nEducational attainment: Education\nIncome: HHIncome",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 1"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps1/PS1_PH784_2025.html#pair-wise-comparison",
+    "href": "problem-sets/ps1/PS1_PH784_2025.html#pair-wise-comparison",
+    "title": "PH784: Problem Set #1 (due Sept 15, 2025)",
+    "section": "1. Pair-wise comparison",
+    "text": "1. Pair-wise comparison\n1.1 Use the pair-wise comparison approach to quantify the education-based disparity in the prevalence of current smoker in the NHANES dataset. Report your estimate and show your R code.\n1.2 What is your reference group?\n1.3 What is the scale of the inequality you estimated? Also, briefly explain how you would estimate inequalities in the other scale.",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 1"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps1/PS1_PH784_2025.html#mean-difference-measures",
+    "href": "problem-sets/ps1/PS1_PH784_2025.html#mean-difference-measures",
+    "title": "PH784: Problem Set #1 (due Sept 15, 2025)",
+    "section": "2. Mean difference measures",
+    "text": "2. Mean difference measures\n2.1 The table below shows mean systolic blood pressure levels across the education groups among individuals with no missing data in the two variables.\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                Education\n                n\n                mean.SBP\n              \n        \n        \n        \n                \n                  8th Grade\n                  423\n                  125.9220\n                \n                \n                  9 - 11th Grade\n                  866\n                  122.3349\n                \n                \n                  High School\n                  1460\n                  122.4103\n                \n                \n                  Some College\n                  2175\n                  121.0143\n                \n                \n                  College Grad\n                  2036\n                  118.3777\n                \n        \n      \n    \n\n\n\nThe overall systolic blood pressure was (see code output). Calculate the mean difference from a reference group for the absolute education-based inequality in systolic blood pressure. Report your estimate and show your R code.\n2.2 Which group did you chose as a reference group?\n2.3 The R package healtheqaul allows you to compute health disparities easily. Here is the tutorial document for the package. Using the default settings for the function mdmu(), would you expect to obtain the identical estimate for the absolute inequality? Why? Why not? You do not need to actually calculate the disparity using the package. Simply explain your reasoning. Read this page and see how the function handles a reference group and weighting.",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 1"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps1/PS1_PH784_2025.html#regression-based-measures",
+    "href": "problem-sets/ps1/PS1_PH784_2025.html#regression-based-measures",
+    "title": "PH784: Problem Set #1 (due Sept 15, 2025)",
+    "section": "3. Regression-based Measures",
+    "text": "3. Regression-based Measures\nRead this NEJM article by Mackenbach et al. (2008). Table 2 shows estimated SIIs for the educaiton-based absolute inequality across European countries.\n3.1 Interpret the estimated SII for all-cause mortality among men in Sweden (625) and in Hungary (2580). Based on these results, which country do you think is experiencing greater education-based inequality in all-cause mortality?\n3.2 Explain the key assumption underlying their use of SII as a measure of socioecnomic inequality in health and discuss whether the authors provided any justification to support the validity of the assumption. If not, briefly comment on how you would check whether the assumption is valid.",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 1"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps1/PS1_PH784_2025.html#quarto-tip",
+    "href": "problem-sets/ps1/PS1_PH784_2025.html#quarto-tip",
+    "title": "PH784: Problem Set #1 (due Sept 15, 2025)",
+    "section": "Quarto Tip",
+    "text": "Quarto Tip\nWhen providing your answers, use callout blocks for better readability.\n\n\n\n\n\n\nPut your answer inside a callout block. I suggest using the appearance=\"minimal\" for the clean appearance.",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 1"
+    ]
+  },
+  {
+    "objectID": "lectures/week06/index.html",
+    "href": "lectures/week06/index.html",
+    "title": "Week 6: Interaction & Effect Modification",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nExplain the distinction between effect modification/effect heterogeneity and causal interaction\nIdentify key assumptions to examine effect modification/effect heterogeneity and causal interaction\nExplain the importance of scales in assessing effect modification/effect heterogeneity\nExplain the definition of conditional average treatment effects and its role in assessing effect heterogeneity\nIdentify an appropriate method for assessing effect heterogeneity by considering the strengths and limitations of alternative approaches",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "lectures/week06/index.html#learning-objectives",
+    "href": "lectures/week06/index.html#learning-objectives",
+    "title": "Week 6: Interaction & Effect Modification",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nExplain the distinction between effect modification/effect heterogeneity and causal interaction\nIdentify key assumptions to examine effect modification/effect heterogeneity and causal interaction\nExplain the importance of scales in assessing effect modification/effect heterogeneity\nExplain the definition of conditional average treatment effects and its role in assessing effect heterogeneity\nIdentify an appropriate method for assessing effect heterogeneity by considering the strengths and limitations of alternative approaches",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "lectures/week06/index.html#date-and-time",
+    "href": "lectures/week06/index.html#date-and-time",
+    "title": "Week 6: Interaction & Effect Modification",
+    "section": "📅 Date and Time",
+    "text": "📅 Date and Time\nMonday, October 14, 2025 (substitute) | 10:00 AM–12:50 PM\nLocation: Boston University School of Public Health (CTC 460)",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "lectures/week06/index.html#lecture-overview",
+    "href": "lectures/week06/index.html#lecture-overview",
+    "title": "Week 6: Interaction & Effect Modification",
+    "section": "🗣️ Lecture Overview",
+    "text": "🗣️ Lecture Overview\nThe health effects of social determinants likely differ across individuals and communities. We will discuss why and how to assess such effect heterogeneity. This session covers both traditional and novel machine-learning-based approaches for assessing effect heterogeneity.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "lectures/week06/index.html#required-readings",
+    "href": "lectures/week06/index.html#required-readings",
+    "title": "Week 6: Interaction & Effect Modification",
+    "section": "📚 Required Readings",
+    "text": "📚 Required Readings\n\nVanderWeele TJ, Knol MJ. A tutorial on interaction. Epidemiologic methods. 2014 Dec 1;3(1):33-72.\nWard JB, Gartner DR, Keyes KM, Fliss MD, McClure ES, Robinson WR. How do we assess a racial disparity in health? Distribution, interaction, and interpretation in epidemiological studies. Annals of epidemiology. 2019 Jan 1;29:1-7.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "lectures/week06/index.html#optional-readings",
+    "href": "lectures/week06/index.html#optional-readings",
+    "title": "Week 6: Interaction & Effect Modification",
+    "section": "📖 Optional Readings",
+    "text": "📖 Optional Readings\n\nShiba K, Inoue K. Harnessing causal forests for epidemiologic research: key considerations. American Journal of Epidemiology. 2024 Jun;193(6):813-8.\nShiba K, Daoud A, Hikichi H, Yazawa A, Aida J, Kondo K, Kawachi I. Heterogeneity in cognitive disability after a major disaster: A natural experiment study. Science advances. 2021 Sep 29;7(40):eabj2610.\nCintron DW, Adler NE, Gottlieb LM, Hagan E, Tan ML, Vlahov D, Glymour MM, Matthay EC. Heterogeneous treatment effects in social policy studies: an assessment of contemporary articles in the health and social sciences. Annals of epidemiology. 2022 Jun 1;70:79-88.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "lectures/week06/index.html#lecture-slides",
+    "href": "lectures/week06/index.html#lecture-slides",
+    "title": "Week 6: Interaction & Effect Modification",
+    "section": "🎬 Lecture Slides",
+    "text": "🎬 Lecture Slides\nUse your keyboard arrows to navigate the slides below. You can also view them in fullscreen.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "lectures/week06/index.html#download-slides",
+    "href": "lectures/week06/index.html#download-slides",
+    "title": "Week 6: Interaction & Effect Modification",
+    "section": "📥 Download Slides",
+    "text": "📥 Download Slides\nDownload the lecture slides in your preferred format:\n\n  📄 Download HTML\n  📄 Download PDF\n\nNote: For PDF, the link will open the print view. Use your browser’s print function (Ctrl+P / Cmd+P) and select “Save as PDF”.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "lectures/week06/index.html#after-the-lecture",
+    "href": "lectures/week06/index.html#after-the-lecture",
+    "title": "Week 6: Interaction & Effect Modification",
+    "section": "📚 After the Lecture",
+    "text": "📚 After the Lecture\n💻 Problem Set 6\nYour main assignment for this week.\n➡️ Go to Problem Set 6\n📓 Syllabus\n➡️ Review the Course Plan\n\nLast updated: October 13, 2025",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "lectures/week04/index.html",
+    "href": "lectures/week04/index.html",
+    "title": "Week 4: Measurement",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nExplain what the validity and reliability of measurements are\nExplain the implications of measurement errors in social epidemiologic research\nSelect measures of socioeconomic status based on their strengths and limitations\nCritically evaluate the operationalization of neighborhood measurements in the literature",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "lectures/week04/index.html#learning-objectives",
+    "href": "lectures/week04/index.html#learning-objectives",
+    "title": "Week 4: Measurement",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nExplain what the validity and reliability of measurements are\nExplain the implications of measurement errors in social epidemiologic research\nSelect measures of socioeconomic status based on their strengths and limitations\nCritically evaluate the operationalization of neighborhood measurements in the literature",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "lectures/week04/index.html#date-and-time",
+    "href": "lectures/week04/index.html#date-and-time",
+    "title": "Week 4: Measurement",
+    "section": "📅 Date and Time",
+    "text": "📅 Date and Time\nMonday, September 29, 2025 | 10:00 AM–12:50 PM\nLocation: Boston University School of Public Health (CTC 460)",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "lectures/week04/index.html#lecture-overview",
+    "href": "lectures/week04/index.html#lecture-overview",
+    "title": "Week 4: Measurement",
+    "section": "🗣️ Lecture Overview",
+    "text": "🗣️ Lecture Overview\nStrong study design and fancy statistical methods alone do not ensure good causal inference. Good causal inference requires good data. In this session, students will learn about the importance of high-quality measurements for scientific rigor and properties of good measures. We will then discuss more specific measurements commonly used in social epidemiologic studies, including socioeconomic status and neighborhood characteristics. The session also provides an overview of common and emerging data sources in social epidemiologic research, along with their strengths and limitations.\nKey topics covered:\n\nMeasurement Quality: Importance of high-quality measurements for scientific rigor\nSocioeconomic Status: Measurements commonly used in social epidemiologic studies\nNeighborhood Characteristics: Measurement approaches and challenges\nData Sources: Common and emerging data sources in social epidemiologic research",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "lectures/week04/index.html#required-readings",
+    "href": "lectures/week04/index.html#required-readings",
+    "title": "Week 4: Measurement",
+    "section": "📚 Required Readings",
+    "text": "📚 Required Readings\n\nArcaya MC, Tucker-Seeley RD, Kim R, Schnake-Mahl A, So M, Subramanian SV. Research on neighborhood effects on health in the United States: a systematic review of study characteristics. Social science & medicine. 2016 Nov 1;168:16-29.\nOakes JM, Rossi PH. The measurement of SES in health research: current practice and steps toward a new approach. Social science & medicine. 2003 Feb 1;56(4):769-84.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "lectures/week04/index.html#optional-readings",
+    "href": "lectures/week04/index.html#optional-readings",
+    "title": "Week 4: Measurement",
+    "section": "📖 Optional Readings",
+    "text": "📖 Optional Readings\n\nHernán MA, VanderWeele TJ. Compound treatments and transportability of causal inference. Epidemiology. 2011 May 1;22(3):368-77.\nKrieger N, Smith K, Naishadham D, Hartman C, Barbeau EM. Experiences of discrimination: validity and reliability of a self-report measure for population health research on racism and health. Social science & medicine. 2005 Oct 1;61(7):1576-96.\nKwan MP. The uncertain geographic context problem. Annals of the Association of American Geographers. 2012 Sep 1;102(5):958-68.\nFotheringham AS, Wong DW. The modifiable areal unit problem in multivariate statistical analysis. Environment and planning A. 1991 Jul;23(7):1025-44.\nVanderWeele TJ, Batty CJ. On the dimensional indeterminacy of one-wave factor analysis under causal effects. Journal of Causal Inference. 2023 Jul 28;11(1):20220074.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "lectures/week04/index.html#lecture-slides",
+    "href": "lectures/week04/index.html#lecture-slides",
+    "title": "Week 4: Measurement",
+    "section": "🎬 Lecture Slides",
+    "text": "🎬 Lecture Slides\nUse your keyboard arrows to navigate the slides below. You can also view them in fullscreen.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "lectures/week04/index.html#download-slides",
+    "href": "lectures/week04/index.html#download-slides",
+    "title": "Week 4: Measurement",
+    "section": "📥 Download Slides",
+    "text": "📥 Download Slides\nDownload the lecture slides in your preferred format:\n\n  📄 Download HTML\n  📄 Download PDF\n\nNote: For PDF, the link will open the print view. Use your browser’s print function (Ctrl+P / Cmd+P) and select “Save as PDF”.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "lectures/week04/index.html#after-the-lecture",
+    "href": "lectures/week04/index.html#after-the-lecture",
+    "title": "Week 4: Measurement",
+    "section": "📚 After the Lecture",
+    "text": "📚 After the Lecture\n💻 Problem Set 4\nYour main assignment for this week.\n➡️ Go to Problem Set 4\n📓 Syllabus\n➡️ Review the Course Plan\n\nLast updated: September 29, 2025",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "lectures/week02/index.html",
+    "href": "lectures/week02/index.html",
+    "title": "Week 2: Causal Inference & Social Epi",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nIdentify potential weaknesses of published studies on social determinants of health\nIdentify assumptions underlying a regression model and suggest alternative approaches\nDescribe consistency and positivity assumptions in causal identification and how they may be violated in social epidemiologic studies",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "lectures/week02/index.html#learning-objectives",
+    "href": "lectures/week02/index.html#learning-objectives",
+    "title": "Week 2: Causal Inference & Social Epi",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nIdentify potential weaknesses of published studies on social determinants of health\nIdentify assumptions underlying a regression model and suggest alternative approaches\nDescribe consistency and positivity assumptions in causal identification and how they may be violated in social epidemiologic studies",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "lectures/week02/index.html#date-and-time",
+    "href": "lectures/week02/index.html#date-and-time",
+    "title": "Week 2: Causal Inference & Social Epi",
+    "section": "📅 Date and Time",
+    "text": "📅 Date and Time\nMonday, September 15, 2025 | 10:00 AM–12:50 PM\nLocation: Boston University School of Public Health (CTC 460)",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "lectures/week02/index.html#lecture-overview",
+    "href": "lectures/week02/index.html#lecture-overview",
+    "title": "Week 2: Causal Inference & Social Epi",
+    "section": "🗣️ Lecture Overview",
+    "text": "🗣️ Lecture Overview\nIn this session, we will begin with a brief review of causal inference based on observational data. Students will then learn about challenges in causal inference that are unique to social epidemiology, such as the manipulability of social exposures.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "lectures/week02/index.html#required-readings",
+    "href": "lectures/week02/index.html#required-readings",
+    "title": "Week 2: Causal Inference & Social Epi",
+    "section": "📚 Required Readings",
+    "text": "📚 Required Readings\n\nGalea S, Hernán MA. Win-win: reconciling social epidemiology and causal inference. American journal of epidemiology. 2020 Mar 2;189(3):167-70.\nRehkopf DH, Glymour MM, Osypuk TL. The consistency assumption for causal inference in social epidemiology: when a rose is not a rose. Current epidemiology reports. 2016 Mar;3(1):63-71.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "lectures/week02/index.html#optional-readings",
+    "href": "lectures/week02/index.html#optional-readings",
+    "title": "Week 2: Causal Inference & Social Epi",
+    "section": "📖 Optional Readings",
+    "text": "📖 Optional Readings\n\nCommentaries for Galea & Hernán (2020)\n\ne.g., VanderWeele TJ. Invited commentary: counterfactuals in social epidemiology—thinking outside of “the box”. American Journal of Epidemiology. 2020 Mar 2;189(3):175-8.\n\nHernán MA. Does water kill? A call for less casual causal inferences. Annals of epidemiology. 2016 Oct 1;26(10):674-80.\nKaufman JS. Commentary: causal inference for social exposures. Annual review of public health. 2019 Apr 1;40(1):7-21.\nHernán MA, VanderWeele TJ. Compound treatments and transportability of causal inference. Epidemiology. 2011 May 1;22(3):368-77.\nVanderWeele TJ, Hernan MA. Causal inference under multiple versions of treatment. Journal of causal inference. 2013 May 29;1(1):1-20.\nRudolph KE, Williams NT, Miles CH, Antonelli J, Diaz I. All models are wrong, but which are useful? Comparing parametric and nonparametric estimation of causal effects in finite samples. Journal of Causal Inference. 2023 Nov 27;11(1):20230022.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "lectures/week02/index.html#lecture-slides",
+    "href": "lectures/week02/index.html#lecture-slides",
+    "title": "Week 2: Causal Inference & Social Epi",
+    "section": "🎬 Lecture Slides",
+    "text": "🎬 Lecture Slides\nUse your keyboard arrows to navigate the slides below. You can also view them in fullscreen.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "lectures/week02/index.html#download-slides",
+    "href": "lectures/week02/index.html#download-slides",
+    "title": "Week 2: Causal Inference & Social Epi",
+    "section": "📥 Download Slides",
+    "text": "📥 Download Slides\nDownload the lecture slides in your preferred format:\n\n  📄 Download HTML\n  📄 Download PDF\n\nNote: For PDF, the link will open the print view. Use your browser’s print function (Ctrl+P / Cmd+P) and select “Save as PDF”.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "lectures/week02/index.html#after-the-lecture",
+    "href": "lectures/week02/index.html#after-the-lecture",
+    "title": "Week 2: Causal Inference & Social Epi",
+    "section": "📚 After the Lecture",
+    "text": "📚 After the Lecture\n💻 Problem Set 2\nYour main assignment for this week.\n➡️ Go to Problem Set 2\n📓 Syllabus\n➡️ Review the Course Plan\n\nLast updated: September 15, 2025",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PH784 Advanced Social Epidemiology: Methods",
+    "section": "",
+    "text": "Welcome to PH784 Advanced Social Epidemiology: Methods, a 2-credit (half-semester) course at Boston University School of Public Health. This site houses lecture slides, problem sets, and supporting materials for the current academic year.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "PH784 Advanced Social Epidemiology: Methods",
+    "section": "",
+    "text": "Welcome to PH784 Advanced Social Epidemiology: Methods, a 2-credit (half-semester) course at Boston University School of Public Health. This site houses lecture slides, problem sets, and supporting materials for the current academic year.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#course-materials",
+    "href": "index.html#course-materials",
+    "title": "PH784 Advanced Social Epidemiology: Methods",
+    "section": "Course Materials",
+    "text": "Course Materials\n\nWeekly Schedule\n\n\n\nWeek\nTopic\nLecture\nProblem Set\n\n\n\n\n1\nIntro & Measures of Health Disparities\nWeek 1 Lecture\nProblem Set 1\n\n\n2\nCausal Inference & Social Epi\nWeek 2 Lecture\nProblem Set 2\n\n\n3\nCausal Inference Methods\nWeek 3 Lecture\nProblem Set 3\n\n\n4\nMeasurement\nWeek 4 Lecture\nProblem Set 4\n\n\n5\nCausal Estimands\nWeek 5 Lecture\nProblem Set 5\n\n\n6\nInteraction & Effect Modification\nWeek 6 Lecture\nProblem Set 6\n\n\n7\nMediation\nWeek 7 Lecture\nFinal Exam\n\n\n\n\n\nSyllabus\n\nCourse Syllabus (PDF)",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#about-the-course",
+    "href": "index.html#about-the-course",
+    "title": "PH784 Advanced Social Epidemiology: Methods",
+    "section": "About the Course",
+    "text": "About the Course\nMethodological rigor is essential in social epidemiology to improve our understanding of the social determinants of health and to inform interventions and policies that promote health equity. Advancing methodological rigor in social epidemiologic research requires an understanding of the unique challenges and key research questions in this field.\nThis course covers the primary considerations needed to critically evaluate evidence from the social epidemiologic literature and to identify gaps for future research. We will focus on causal estimands, interpretation, and underlying assumptions rather than the statistical mechanics of analytic methods. This is not intended as a general epidemiologic methods course; rather, it provides an overview of recent discussions on methodological issues specific to social epidemiology.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#logistics",
+    "href": "index.html#logistics",
+    "title": "PH784 Advanced Social Epidemiology: Methods",
+    "section": "Logistics",
+    "text": "Logistics\n\nMeeting time: Mondays, 10:00 AM–12:50 PM (Fall 2025)\nLocation: Boston University School of Public Health (CTC 460)\nFormat: In-person lectures and weekly problem sets\n\nThroughout the course, students will use Quarto to complete assignments. Although data analysis tasks using R are minimal, students are encouraged to become familiar with both R and Quarto for reproducible data analysis and reporting.\nLecture slides are created using Quarto Reveal.js with the Clean theme by Grant McDermott.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "PH784 Advanced Social Epidemiology: Methods",
+    "section": "Instructor",
+    "text": "Instructor\n\n  \n  \n    Koichiro Shiba\n    Assistant Professor\n    Boston University School of Public Health\n    \n       Email\n       BU Profile\n       LinkedIn\n       Google Scholar\n    \n  \n\n\nLast updated: Fall 2025",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "lectures/week01/index.html",
+    "href": "lectures/week01/index.html",
+    "title": "Week 1: Intro & Measures of Health Disparities",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nClassify key typology of social epidemiologic inquiries and their purposes\nExplain the importance of questioning the research questions based on theories\nSelect measures of health disparity based on their pros and cons\nCritically evaluate the literature that reports the magnitudes of health disparities",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "lectures/week01/index.html#learning-objectives",
+    "href": "lectures/week01/index.html#learning-objectives",
+    "title": "Week 1: Intro & Measures of Health Disparities",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nClassify key typology of social epidemiologic inquiries and their purposes\nExplain the importance of questioning the research questions based on theories\nSelect measures of health disparity based on their pros and cons\nCritically evaluate the literature that reports the magnitudes of health disparities",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "lectures/week01/index.html#date-and-time",
+    "href": "lectures/week01/index.html#date-and-time",
+    "title": "Week 1: Intro & Measures of Health Disparities",
+    "section": "📅 Date and Time",
+    "text": "📅 Date and Time\nMonday, September 8, 2025 | 10:00 AM–12:50 PM\nLocation: Boston University School of Public Health (CTC 460)",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "lectures/week01/index.html#lecture-overview",
+    "href": "lectures/week01/index.html#lecture-overview",
+    "title": "Week 1: Intro & Measures of Health Disparities",
+    "section": "🗣️ Lecture Overview",
+    "text": "🗣️ Lecture Overview\nThis session begins with a brief overview of course objectives, a working agreement for the course, and introductions to social epidemiologic inquiries. We will then review the major concepts and methods in descriptively measuring health disparities.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "lectures/week01/index.html#required-readings",
+    "href": "lectures/week01/index.html#required-readings",
+    "title": "Week 1: Intro & Measures of Health Disparities",
+    "section": "📚 Required Readings",
+    "text": "📚 Required Readings\n\nBraveman P. Health disparities and health equity: concepts and measurement. (2006) Annu Rev Public Health, 27:167-194.\nHarper S, Lynch J. Health inequalities: measurement and decomposition. Methods in social epidemiology. 2017 Mar 20;2.\n\nPDF version available at SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2887311\nA comprehensive overview of health disparity metrics",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "lectures/week01/index.html#optional-readings",
+    "href": "lectures/week01/index.html#optional-readings",
+    "title": "Week 1: Intro & Measures of Health Disparities",
+    "section": "📖 Optional Readings",
+    "text": "📖 Optional Readings\n\nFox MP, Murray EJ, Lesko CR, Sealy-Jefferson S. On the need to revitalize descriptive epidemiology. American journal of epidemiology. 2022 Jul;191(7):1174-9.\nMackenbach, & Kunst. (1997). Measuring the magnitude of socio-economic inequalities in health: An overview of available measures illustrated with two examples from Europe. Social Science & Medicine, 44(6), 757-771.\n\nThis is a real-world application of SII/RII for assessing health disparities.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "lectures/week01/index.html#lecture-slides",
+    "href": "lectures/week01/index.html#lecture-slides",
+    "title": "Week 1: Intro & Measures of Health Disparities",
+    "section": "🎬 Lecture Slides",
+    "text": "🎬 Lecture Slides\nUse your keyboard arrows to navigate the slides below. You can also view them in fullscreen.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "lectures/week01/index.html#download-slides",
+    "href": "lectures/week01/index.html#download-slides",
+    "title": "Week 1: Intro & Measures of Health Disparities",
+    "section": "📥 Download Slides",
+    "text": "📥 Download Slides\nDownload the lecture slides in your preferred format:\n\n  📄 Download HTML\n  📄 Download PDF\n\nNote: For PDF, the link will open the print view. Use your browser’s print function (Ctrl+P / Cmd+P) and select “Save as PDF”.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "lectures/week01/index.html#after-the-lecture",
+    "href": "lectures/week01/index.html#after-the-lecture",
+    "title": "Week 1: Intro & Measures of Health Disparities",
+    "section": "📚 After the Lecture",
+    "text": "📚 After the Lecture\n💻 Problem Set 1\nYour main assignment for this week.\n➡️ Go to Problem Set 1\n📓 Syllabus\n➡️ Review the Course Plan\n\nLast updated: September 8, 2025",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "lectures/week03/index.html",
+    "href": "lectures/week03/index.html",
+    "title": "Week 3: Causal Inference Methods",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nSelect covariates based on the principles of confounder selection\nCritically yet constructively interpret causal social epidemiology studies that are likely affected by unmeasured confounders and selection bias\nInterpret findings from fixed effects and quasi-random approaches while acknowledging their key assumptions as well as pros and cons\nExplain why there is no “hierarchy” in these different approaches",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "lectures/week03/index.html#learning-objectives",
+    "href": "lectures/week03/index.html#learning-objectives",
+    "title": "Week 3: Causal Inference Methods",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nSelect covariates based on the principles of confounder selection\nCritically yet constructively interpret causal social epidemiology studies that are likely affected by unmeasured confounders and selection bias\nInterpret findings from fixed effects and quasi-random approaches while acknowledging their key assumptions as well as pros and cons\nExplain why there is no “hierarchy” in these different approaches",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "lectures/week03/index.html#date-and-time",
+    "href": "lectures/week03/index.html#date-and-time",
+    "title": "Week 3: Causal Inference Methods",
+    "section": "📅 Date and Time",
+    "text": "📅 Date and Time\nMonday, September 22, 2025 | 10:00 AM–12:50 PM\nLocation: Boston University School of Public Health (CTC 460)",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "lectures/week03/index.html#lecture-overview",
+    "href": "lectures/week03/index.html#lecture-overview",
+    "title": "Week 3: Causal Inference Methods",
+    "section": "🗣️ Lecture Overview",
+    "text": "🗣️ Lecture Overview\nWe will learn alternative approaches to causal identification commonly used in social epidemiology: between-comparison based on covariate adjustment, within-comparison using fixed regression, and quasi-random methods.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "lectures/week03/index.html#required-readings",
+    "href": "lectures/week03/index.html#required-readings",
+    "title": "Week 3: Causal Inference Methods",
+    "section": "📚 Required Readings",
+    "text": "📚 Required Readings\n\nVanderWeele TJ. Principles of confounder selection. European journal of epidemiology. 2019 Mar 15;34:211-9.\nKrieger N, Davey Smith G. The tale wagged by the DAG: broadening the scope of causal inference and explanation for epidemiology. International journal of epidemiology. 2016 Dec 1;45(6):1787-808.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "lectures/week03/index.html#optional-readings",
+    "href": "lectures/week03/index.html#optional-readings",
+    "title": "Week 3: Causal Inference Methods",
+    "section": "📖 Optional Readings",
+    "text": "📖 Optional Readings\n\nCommentaries for Krieger & Davey Smith (2016)\n\ne.g., VanderWeele TJ. Commentary: on causes, causal inference, and potential outcomes. International journal of epidemiology. 2016 Dec 1;45(6):1809-16.\n\nImbens GW. Potential outcome and directed acyclic graph approaches to causality: Relevance for empirical practice in economics. Journal of Economic Literature. 2020 Dec 1;58(4):1129-79.\n\nCritiques of DAGs by an econometrician. Do you buy their arguments?\n\nHernán MA, Hernández-Díaz S, Robins JM. A structural approach to selection bias. Epidemiology. 2004 Sep 1;15(5):615-25.\nVanderWeele TJ, Ding P. Sensitivity analysis in observational research: introducing the E-value. Annals of internal medicine. 2017 Aug 15;167(4):268-74.\nHernán MA, Robins JM. Instruments for causal inference: an epidemiologist’s dream?. Epidemiology. 2006 Jul 1;17(4):360-72.\nShiba K, Kawahara T. Using propensity scores for causal inference: pitfalls and tips. Journal of epidemiology. 2021 Aug 5;31(8):457-63.\n\nOn similarities and differences between various propensity score methods in terms of causal assumptions, modeling assumptions, and causal estimand under consideration.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "lectures/week03/index.html#lecture-slides",
+    "href": "lectures/week03/index.html#lecture-slides",
+    "title": "Week 3: Causal Inference Methods",
+    "section": "🎬 Lecture Slides",
+    "text": "🎬 Lecture Slides\nUse your keyboard arrows to navigate the slides below. You can also view them in fullscreen.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "lectures/week03/index.html#download-slides",
+    "href": "lectures/week03/index.html#download-slides",
+    "title": "Week 3: Causal Inference Methods",
+    "section": "📥 Download Slides",
+    "text": "📥 Download Slides\nDownload the lecture slides in your preferred format:\n\n  📄 Download HTML\n  📄 Download PDF\n\nNote: For PDF, the link will open the print view. Use your browser’s print function (Ctrl+P / Cmd+P) and select “Save as PDF”.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "lectures/week03/index.html#after-the-lecture",
+    "href": "lectures/week03/index.html#after-the-lecture",
+    "title": "Week 3: Causal Inference Methods",
+    "section": "📚 After the Lecture",
+    "text": "📚 After the Lecture\n💻 Problem Set 3\nYour main assignment for this week.\n➡️ Go to Problem Set 3\n📓 Syllabus\n➡️ Review the Course Plan\n\nLast updated: September 22, 2025",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "lectures/week05/index.html",
+    "href": "lectures/week05/index.html",
+    "title": "Week 5: Causal Estimands",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nIdentify causal estimands of published or own studies and translate them to mathematical notations\nGo beyond the population average treatment effect paradigm and consider alternative estimands that may be more relevant to questions of interest\nExplain when time-varying treatment analysis is truly needed in social epidemiology, where most exposures are time-varying in nature",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "lectures/week05/index.html#learning-objectives",
+    "href": "lectures/week05/index.html#learning-objectives",
+    "title": "Week 5: Causal Estimands",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nIdentify causal estimands of published or own studies and translate them to mathematical notations\nGo beyond the population average treatment effect paradigm and consider alternative estimands that may be more relevant to questions of interest\nExplain when time-varying treatment analysis is truly needed in social epidemiology, where most exposures are time-varying in nature",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "lectures/week05/index.html#date-and-time",
+    "href": "lectures/week05/index.html#date-and-time",
+    "title": "Week 5: Causal Estimands",
+    "section": "📅 Date and Time",
+    "text": "📅 Date and Time\nMonday, October 6, 2025 | 10:00 AM–12:50 PM\nLocation: Boston University School of Public Health (CTC 460)",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "lectures/week05/index.html#lecture-overview",
+    "href": "lectures/week05/index.html#lecture-overview",
+    "title": "Week 5: Causal Estimands",
+    "section": "🗣️ Lecture Overview",
+    "text": "🗣️ Lecture Overview\nCausal inference is not just about removing bias and estimating effects better based on observational data. The critical step in causal inference is to specify which “effects” (i.e., causal estimand) to estimate to begin with. This session will examine various types of causal estimands relevant to social epidemiology, reviewing their mathematical definitions, estimation approaches, and application examples.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "lectures/week05/index.html#required-readings",
+    "href": "lectures/week05/index.html#required-readings",
+    "title": "Week 5: Causal Estimands",
+    "section": "📚 Required Readings",
+    "text": "📚 Required Readings\n\nWestreich, D. From patients to policy: population intervention effects in epidemiology. Epidemiology. 2017 July; 28(4):525-528.\nShiba K, Torres JM, Daoud A, Inoue K, Kanamori S, Tsuji T, Kamada M, Kondo K, Kawachi I. Estimating the impact of sustained social participation on depressive symptoms in older adults. Epidemiology. 2021 Nov 1;32(6):886-95.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "lectures/week05/index.html#optional-readings",
+    "href": "lectures/week05/index.html#optional-readings",
+    "title": "Week 5: Causal Estimands",
+    "section": "📖 Optional Readings",
+    "text": "📖 Optional Readings\n\nLundberg I, Johnson R, Stewart BM. What is your estimand? Defining the target quantity connects statistical evidence to theory. American Sociological Review. 2021 Jun;86(3):532-65.\nLundberg I. The gap-closing estimand: A causal approach to study interventions that close disparities across social categories. Sociological Methods & Research. 2024 May;53(2):507-70.\nAhern J, Hubbard A, Galea S. Estimating the effects of potential public health interventions on population disease burden: a step-by-step illustration of causal inference methods. American journal of epidemiology. 2009 May 1;169(9):1140-7.\nRudolph JE, Cartus A, Bodnar LM, Schisterman EF, Naimi AI. The role of the natural course in causal analysis. American journal of epidemiology. 2022 Feb;191(2):341-8.\nHu FB. Dietary pattern analysis: a new direction in nutritional epidemiology. Current opinion in lipidology. 2002 Feb 1;13(1):3-9. (Consider how their argument may apply to social epidemiology!)\n\nShiba K, Hanazato M, Aida J, Kondo K, Arcaya M, James P, Kawachi I. Cardiometabolic profiles and change in neighborhood food and built environment among older adults: a natural experiment. Epidemiology. 2020 Nov 1;31(6):758-67.\n\nVanderWeele TJ, Mathur MB, Chen Y. Outcome-wide longitudinal designs for causal inference: a new template for empirical studies. Statistical Science. 2020 August; 35(3):437-466",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "lectures/week05/index.html#lecture-slides",
+    "href": "lectures/week05/index.html#lecture-slides",
+    "title": "Week 5: Causal Estimands",
+    "section": "🎬 Lecture Slides",
+    "text": "🎬 Lecture Slides\nUse your keyboard arrows to navigate the slides below. You can also view them in fullscreen.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "lectures/week05/index.html#download-slides",
+    "href": "lectures/week05/index.html#download-slides",
+    "title": "Week 5: Causal Estimands",
+    "section": "📥 Download Slides",
+    "text": "📥 Download Slides\nDownload the lecture slides in your preferred format:\n\n  📄 Download HTML\n  📄 Download PDF\n\nNote: For PDF, the link will open the print view. Use your browser’s print function (Ctrl+P / Cmd+P) and select “Save as PDF”.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "lectures/week05/index.html#after-the-lecture",
+    "href": "lectures/week05/index.html#after-the-lecture",
+    "title": "Week 5: Causal Estimands",
+    "section": "📚 After the Lecture",
+    "text": "📚 After the Lecture\n💻 Problem Set 5\nYour main assignment for this week.\n➡️ Go to Problem Set 5\n📓 Syllabus\n➡️ Review the Course Plan\n\nLast updated: October 6, 2025",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "lectures/week07/index.html",
+    "href": "lectures/week07/index.html",
+    "title": "Week 7: Mediation",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nExplain various types of causal mediation analysis and underlying assumptions\nApply mediation analysis to decompose the association between social characteristics (e.g., race and ethnicity) and health to identify the target of interventions for mitigating health disparities\nApply mediation analysis to strengthen theories in life-course epidemiology",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "lectures/week07/index.html#learning-objectives",
+    "href": "lectures/week07/index.html#learning-objectives",
+    "title": "Week 7: Mediation",
+    "section": "",
+    "text": "By the end of this session, you should be able to:\n\nExplain various types of causal mediation analysis and underlying assumptions\nApply mediation analysis to decompose the association between social characteristics (e.g., race and ethnicity) and health to identify the target of interventions for mitigating health disparities\nApply mediation analysis to strengthen theories in life-course epidemiology",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "lectures/week07/index.html#date-and-time",
+    "href": "lectures/week07/index.html#date-and-time",
+    "title": "Week 7: Mediation",
+    "section": "📅 Date and Time",
+    "text": "📅 Date and Time\nMonday, October 20, 2025 | 10:00 AM–12:50 PM\nLocation: Boston University School of Public Health (CTC 460)",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "lectures/week07/index.html#lecture-overview",
+    "href": "lectures/week07/index.html#lecture-overview",
+    "title": "Week 7: Mediation",
+    "section": "🗣️ Lecture Overview",
+    "text": "🗣️ Lecture Overview\nMediation analysis has increasingly been used in epidemiologic research to study intermediate pathways linking exposures and health outcomes. This session will review the theoretical basis and examples of applications of mediation analysis that have provided insights unique to social epidemiologic research questions.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "lectures/week07/index.html#required-readings",
+    "href": "lectures/week07/index.html#required-readings",
+    "title": "Week 7: Mediation",
+    "section": "📚 Required Readings",
+    "text": "📚 Required Readings\n\nNguyen TQ, Schmid I, Stuart EA. Clarifying causal mediation analysis for the applied researcher: Defining effects based on what we want to learn. Psychological Methods. 2021 Apr;26(2):255.\nJackson JW, VanderWeele TJ. Decomposition analysis to identify intervention targets for reducing disparities. Epidemiology. 2018 Nov 1;29(6):825-35.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "lectures/week07/index.html#optional-readings",
+    "href": "lectures/week07/index.html#optional-readings",
+    "title": "Week 7: Mediation",
+    "section": "📖 Optional Readings",
+    "text": "📖 Optional Readings\n\nNaimi AI, Schnitzer ME, Moodie EE, Bodnar LM. Mediation analysis for health disparities research. American journal of epidemiology. 2016 Aug 15;184(4):315-24.\nNandi A, Glymour MM, Kawachi I, VanderWeele TJ. Using marginal structural models to estimate the direct effect of adverse childhood social conditions on onset of heart disease, diabetes, and stroke. Epidemiology. 2012 Mar 1;23(2):223-32.\nYazawa A, Shiba K, Inoue Y, Okuzono SS, Inoue K, Kondo N, Kondo K, Kawachi I. Early childhood adversity and late-life depressive symptoms: unpacking mediation and interaction by adult socioeconomic status. Social psychiatry and psychiatric epidemiology. 2022 Jun;57(6):1147-56.\nVanderWeele TJ. Invited commentary: structural equation models and epidemiologic analysis. American journal of epidemiology. 2012 Oct 1;176(7):608-12.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "lectures/week07/index.html#lecture-slides",
+    "href": "lectures/week07/index.html#lecture-slides",
+    "title": "Week 7: Mediation",
+    "section": "🎬 Lecture Slides",
+    "text": "🎬 Lecture Slides\nUse your keyboard arrows to navigate the slides below. You can also view them in fullscreen.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "lectures/week07/index.html#download-slides",
+    "href": "lectures/week07/index.html#download-slides",
+    "title": "Week 7: Mediation",
+    "section": "📥 Download Slides",
+    "text": "📥 Download Slides\nDownload the lecture slides in your preferred format:\n\n  📄 Download HTML\n  📄 Download PDF\n\nNote: For PDF, the link will open the print view. Use your browser’s print function (Ctrl+P / Cmd+P) and select “Save as PDF”.",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "lectures/week07/index.html#after-the-lecture",
+    "href": "lectures/week07/index.html#after-the-lecture",
+    "title": "Week 7: Mediation",
+    "section": "📚 After the Lecture",
+    "text": "📚 After the Lecture\n📓 Syllabus\n➡️ Review the Course Plan\n\nLast updated: October 20, 2025",
+    "crumbs": [
+      "Home",
+      "Lectures",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps2/PS2_PH784_2025.html",
+    "href": "problem-sets/ps2/PS2_PH784_2025.html",
+    "title": "PH784: Problem Set #2",
+    "section": "",
+    "text": "← Back to Course Home",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 2"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps2/PS2_PH784_2025.html#q1.-explain-what-this-exchangeability-assumption-means-in-words",
+    "href": "problem-sets/ps2/PS2_PH784_2025.html#q1.-explain-what-this-exchangeability-assumption-means-in-words",
+    "title": "PH784: Problem Set #2",
+    "section": "Q1. Explain what this exchangeability assumption means in words",
+    "text": "Q1. Explain what this exchangeability assumption means in words\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 2"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps2/PS2_PH784_2025.html#q2.-provide-mathematical-notation-for-the-statistical-estimand-corresponding-to-the-regression-coefficient--4.2.",
+    "href": "problem-sets/ps2/PS2_PH784_2025.html#q2.-provide-mathematical-notation-for-the-statistical-estimand-corresponding-to-the-regression-coefficient--4.2.",
+    "title": "PH784: Problem Set #2",
+    "section": "Q2. Provide mathematical notation for the statistical estimand corresponding to the regression coefficient (-4.2).",
+    "text": "Q2. Provide mathematical notation for the statistical estimand corresponding to the regression coefficient (-4.2).\nIn Quarto, you can use $$ to write equations in LaTeX.\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 2"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps2/PS2_PH784_2025.html#q3.-calculate-the-statistical-quantity-in-question-2-above-without-using-regression.",
+    "href": "problem-sets/ps2/PS2_PH784_2025.html#q3.-calculate-the-statistical-quantity-in-question-2-above-without-using-regression.",
+    "title": "PH784: Problem Set #2",
+    "section": "Q3. Calculate the statistical quantity in Question 2 above without using regression.",
+    "text": "Q3. Calculate the statistical quantity in Question 2 above without using regression.\nYou should get -4.2 (or something very similar, depending on rounding). Show your code.\n\nThe researcher interpreted the estimate for PhysActive as the “effect of physical activity on systolic blood pressure”. Formally, this is expressed using the counterfactual notation as follows\n\\[E[BPSysAve^{PhysActive=Yes}]-E[BPSysAve^{PhysActive=No}]=-4.2\\]",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 2"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps2/PS2_PH784_2025.html#q4.-provide-the-interpretation-of-this-causal-estimand-using-the-counterfactual-language.",
+    "href": "problem-sets/ps2/PS2_PH784_2025.html#q4.-provide-the-interpretation-of-this-causal-estimand-using-the-counterfactual-language.",
+    "title": "PH784: Problem Set #2",
+    "section": "Q4. Provide the interpretation of this causal estimand using the counterfactual language.",
+    "text": "Q4. Provide the interpretation of this causal estimand using the counterfactual language.\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 2"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps2/PS2_PH784_2025.html#q5.-show-how-you-can-use-the-conditional-exchangeability-and-consistency-to-link-the-statistical-estimand-to-the-causal-estimand.",
+    "href": "problem-sets/ps2/PS2_PH784_2025.html#q5.-show-how-you-can-use-the-conditional-exchangeability-and-consistency-to-link-the-statistical-estimand-to-the-causal-estimand.",
+    "title": "PH784: Problem Set #2",
+    "section": "Q5. Show how you can use the conditional exchangeability and consistency to link the statistical estimand to the causal estimand.",
+    "text": "Q5. Show how you can use the conditional exchangeability and consistency to link the statistical estimand to the causal estimand.\nSee Page 25 of the lecture slides for an example.\n\n\n\n\n\n\nYour answer\n\n\n\n\nThis is technically a conditional effect (i.e., the effect of poverty.bin within strata of the covariates). However, we do not normally make such an interpretation and just interpret this as “the effect of poverty.bin in the overall sample”.",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 2"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps2/PS2_PH784_2025.html#q6.-what-assumption-is-needed-to-make-this-interpretation-how-is-that-assumption-expressed-in-the-logistic-regression-model-glm",
+    "href": "problem-sets/ps2/PS2_PH784_2025.html#q6.-what-assumption-is-needed-to-make-this-interpretation-how-is-that-assumption-expressed-in-the-logistic-regression-model-glm",
+    "title": "PH784: Problem Set #2",
+    "section": "Q6. What assumption is needed to make this interpretation? How is that assumption expressed in the logistic regression model (glm())?",
+    "text": "Q6. What assumption is needed to make this interpretation? How is that assumption expressed in the logistic regression model (glm())?\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 2"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps2/PS2_PH784_2025.html#q7.-using-the-summary-function-show-distributions-of-poverty-among-those-with-poverty.bin1-and-among-those-with-poverty.bin0-respectively.",
+    "href": "problem-sets/ps2/PS2_PH784_2025.html#q7.-using-the-summary-function-show-distributions-of-poverty-among-those-with-poverty.bin1-and-among-those-with-poverty.bin0-respectively.",
+    "title": "PH784: Problem Set #2",
+    "section": "Q7. Using the summary() function, show distributions of poverty among those with poverty.bin=1 and among those with poverty.bin=0 respectively.",
+    "text": "Q7. Using the summary() function, show distributions of poverty among those with poverty.bin=1 and among those with poverty.bin=0 respectively.",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 2"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps2/PS2_PH784_2025.html#q8.-based-on-your-answer-to-q7-discuss-whether-you-think-the-consistency-assumption-for-poverty.bin-is-reasonable.-if-the-assumption-is-not-valid-suggest-one-solution-to-the-problem.",
+    "href": "problem-sets/ps2/PS2_PH784_2025.html#q8.-based-on-your-answer-to-q7-discuss-whether-you-think-the-consistency-assumption-for-poverty.bin-is-reasonable.-if-the-assumption-is-not-valid-suggest-one-solution-to-the-problem.",
+    "title": "PH784: Problem Set #2",
+    "section": "Q8. Based on your answer to Q7, discuss whether you think the consistency assumption for poverty.bin is reasonable. If the assumption is not valid, suggest one solution to the problem.",
+    "text": "Q8. Based on your answer to Q7, discuss whether you think the consistency assumption for poverty.bin is reasonable. If the assumption is not valid, suggest one solution to the problem.\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 2"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps4/PS4_PH784_2025.html",
+    "href": "problem-sets/ps4/PS4_PH784_2025.html",
+    "title": "PH784: Problem Set #4",
+    "section": "",
+    "text": "← Back to Course Home",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 4"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps4/PS4_PH784_2025.html#q1.-explain-how-the-second-model-differs-from-the-first-one-in-terms-of-adjusted-covariates.-why-do-you-think-those-changes-were-made",
+    "href": "problem-sets/ps4/PS4_PH784_2025.html#q1.-explain-how-the-second-model-differs-from-the-first-one-in-terms-of-adjusted-covariates.-why-do-you-think-those-changes-were-made",
+    "title": "PH784: Problem Set #4",
+    "section": "Q1. Explain how the second model differs from the first one in terms of adjusted covariates. Why do you think those changes were made?",
+    "text": "Q1. Explain how the second model differs from the first one in terms of adjusted covariates. Why do you think those changes were made?\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 4"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps4/PS4_PH784_2025.html#q2.-what-is-the-exchangeability-assumption-we-need-to-causally-interpret-the-estimate-for-union-0.054-explain-the-specific-assumption-in-words.",
+    "href": "problem-sets/ps4/PS4_PH784_2025.html#q2.-what-is-the-exchangeability-assumption-we-need-to-causally-interpret-the-estimate-for-union-0.054-explain-the-specific-assumption-in-words.",
+    "title": "PH784: Problem Set #4",
+    "section": "Q2. What is the exchangeability assumption we need to causally interpret the estimate for union (0.054)? Explain the specific assumption in words.",
+    "text": "Q2. What is the exchangeability assumption we need to causally interpret the estimate for union (0.054)? Explain the specific assumption in words.\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 4"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps4/PS4_PH784_2025.html#q3.-how-did-the-authors-measure-individual-level-socioeconomic-status-discuss-strengths-and-limitations-of-their-approach.",
+    "href": "problem-sets/ps4/PS4_PH784_2025.html#q3.-how-did-the-authors-measure-individual-level-socioeconomic-status-discuss-strengths-and-limitations-of-their-approach.",
+    "title": "PH784: Problem Set #4",
+    "section": "Q3. How did the authors measure individual-level socioeconomic status? Discuss strengths and limitations of their approach.",
+    "text": "Q3. How did the authors measure individual-level socioeconomic status? Discuss strengths and limitations of their approach.\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 4"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps4/PS4_PH784_2025.html#q4.-discuss-potential-limitations-of-their-approach-to-measure-food-environment.",
+    "href": "problem-sets/ps4/PS4_PH784_2025.html#q4.-discuss-potential-limitations-of-their-approach-to-measure-food-environment.",
+    "title": "PH784: Problem Set #4",
+    "section": "Q4. Discuss potential limitations of their approach to measure “food environment”.",
+    "text": "Q4. Discuss potential limitations of their approach to measure “food environment”.\nTo answer this question, you can read the whole manuscript or only the following quote.\n\nWe defined a study subject’s neighborhood as a half-mile (805 m) “network buffer” around his or her residential address, comprising locations reachable within a half-mile walk along the street network.\n\n\nWe derived food environment measures from 2001 data purchased from Dun & Bradstreet (D&B; unpublished data). The data include business name, geocoded location, and detailed Standard Industrial Classification (SIC) industry codes (http://www.osha.gov/pls/imis/sic_manual.html) for food establishments. A priori, we grouped food outlets into categories hypothesized to provide BMI-healthy or BMI-unhealthy food, with one intermediate category for food outlets whose classification was uncertain.\n\n\nThe density per square kilometer of establishments falling within each of these three categories was calculated for each subject’s unique network buffer. Subjects were then categorized into increasing quintiles for each of the three food outlet categories.\n\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 4"
+    ]
+  },
+  {
+    "objectID": "problem-sets/ps6/PS6_PH784_2025.html",
+    "href": "problem-sets/ps6/PS6_PH784_2025.html",
+    "title": "PH784: Problem Set #6",
+    "section": "",
+    "text": "← Back to Course Home\n\nRead the following article and answer the questions. Notice that sections in this paper do not follow the conventional order (Introduction, Methods, Results, and Discussion). You will see Methods at the end of the paper, following the guidelines from the Science portfolio journals.\n\nShiba K, Daoud A, Hikichi H, Yazawa A, Aida J, Kondo K, Kawachi I. Heterogeneity in cognitive disability after a major disaster: A natural experiment study. Science Advances. 2021 Sep 29;7(40):eabj2610.\n\nBriefly, this study estimated the heterogeneous effects of disaster-related traumatic experiences (home loss and loss of loved ones) on cognitive disability among older adult survivors of the 2011 Japanese earthquake and tsunami. We will focus on findings for the “home loss” exposure in this problem set. The home loss exposure was binary (0 = no loss or partial damage, 1 = complete home loss), and the continuous levels of cognitive disability were assessed in 2013 (2.5 years after the disaster onset) and 2016 (5.5 years after). The authors used the causal forest algorithm to estimate CATEs of trauma exposures conditional on various pre-disaster characteristics.\n\n\nQ1\nTable 1 shows the distribution of pre-disaster characteristics by exposure status. Explain how the exposed and unexposed individuals differ in terms of their socioeconomic status.\n\n\n\n\n\n\nYour answer\n\n\n\n\n\n\nQ2\nFig. 1 shows the estimated ATEs (\\(E[Y^{a=1}-Y^{a=0}]\\)) of the home loss exposure (\\(A\\)) on cognitive disability levels (\\(Y\\)). Provide an interpretation of the estimate \\(0.14\\) using counterfactual language.\n\n\n\n\n\n\nYour answer\n\n\n\n\n\n\nQ3\nFig. 2 shows the distribution of estimated CATEs (\\(E[Y^{a=1}-Y^{a=0}|L]\\)) conditional on 51 pre-disaster characteristics (\\(L\\)). Provide an interpretation of this estimand.\n\n\n\n\n\n\nYour answer\n\n\n\n\n\n\nQ4\nFocus on the red curves in Fig. 2 (i.e., CATE distributions for the home loss exposure). Which tail of the distribution shows “resilient” individuals for whom home loss appeared less harmful—right tail or left tail? Justify your answer.\n\n\n\n\n\n\nYour answer\n\n\n\n\n\n\nQ5\nOne of the 51 pre-disaster characteristics is education. One could fit the following parametric regression model to examine effect heterogeneity by education, adjusting for other covariates \\(L_{-edu}\\).\n\\[E[Y|A, Education, L_{-edu}] = \\beta_0 + \\beta_1 A + \\beta_2 Education + \\beta_3 A \\times Education + \\gamma L_{-edu}\\]\nWhat are the underlying assumptions about effect heterogeneity this model is making?\n\n\n\n\n\n\nYour answer\n\n\n\n\n\n\nQ6\nTable 3 compares pre-disaster characteristics of the “resilient” vs “vulnerable” groups (i.e., extreme tails of the CATE distribution as discussed in Q4 above). The results showed that the vulnerable group tended to be those with lower educational attainment compared to the resilient group.\nBased on this finding and your answer to Q1, explain whether you think disaster-induced home loss widened or narrowed education-based disparities in cognitive disability levels.\n\n\n\n\n\n\nYour answer\n\n\n\n\n\nQ7\nDiscuss what might explain the observed effect heterogeneity by education. The first author of this paper apparently did a poor job providing alternative explanations comprehensively, so you need to think beyond what’s written in the paper.\n\n\n\n\n\n\nYour answer",
+    "crumbs": [
+      "Home",
+      "Problem Sets",
+      "Problem Set 6"
+    ]
+  }
+]

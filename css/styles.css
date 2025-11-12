@@ -1,0 +1,225 @@
+/* Custom styles for the course website */
+
+/* Color Palette - Matching lecture slides */
+:root {
+  --jet: #1d3557;           /* Dark blue/navy - main text color */
+  --accent: #457b9d;        /* Blue - accent color */
+  --accent2: #be2f3a;       /* Red - secondary accent */
+  --bg-light: #f8f9fa;      /* Light background */
+  --border-color: #e0e0e0;  /* Border color */
+}
+
+/* Typography - Roboto font */
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--jet);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  color: var(--jet);
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+/* Add some spacing and styling */
+.quarto-title-block {
+  margin-bottom: 2rem;
+}
+
+/* Style the course overview section */
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+
+/* Improve table styling */
+table {
+  margin: 1.5rem 0;
+}
+
+table th {
+  background-color: var(--accent);
+  color: white;
+  font-weight: 500;
+}
+
+/* Style links in tables */
+table a {
+  text-decoration: none;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
+
+/* Add some padding to sections */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Global floating home link */
+.home-link {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 1100;
+  background-color: var(--accent);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-link a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-link:hover,
+.home-link a:hover {
+  background-color: var(--jet);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Home button styles for problem sets */
+.home-button {
+  background-color: var(--bg-light) !important;
+  padding: 15px !important;
+  margin-bottom: 20px !important;
+  border-left: 4px solid var(--accent) !important;
+  border-radius: 4px !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.home-button a {
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.home-button a:hover {
+  text-decoration: underline !important;
+}
+
+/* Ensure home button divs after header are visible */
+main > div[style*="background-color: #f8f9fa"] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Home button for revealjs slides */
+.reveal .home-link {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: var(--accent);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-family: 'Roboto', sans-serif;
+}
+
+.reveal .home-link:hover {
+  background-color: var(--jet);
+  text-decoration: none;
+  color: white;
+}
+
+/* Instructor section styling */
+.instructor-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+}
+
+.instructor-photo {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+}
+
+.instructor-info {
+  flex: 1;
+}
+
+.instructor-info h3 {
+  margin-top: 0;
+  color: var(--jet);
+  font-weight: 500;
+}
+
+.instructor-info p {
+  margin: 0.5rem 0;
+  color: var(--jet);
+}
+
+.instructor-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.instructor-links a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: 500;
+}
+
+.instructor-links a:hover {
+  color: var(--jet);
+  text-decoration: underline;
+}
+
+/* Lecture page slide embed styling */
+.lecture-slide-embed {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 2rem 0;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.lecture-slide-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
